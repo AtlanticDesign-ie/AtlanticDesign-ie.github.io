@@ -1,62 +1,67 @@
+/* @media screen and (min-width: 576px) {}
+@media screen and (min-width: 768px) {}
+@media screen and (min-width: 992px) {}
+@media screen and (min-width: 1200px) {} */
+
 /* colors */
 :root {
-    --charcoal: #222;
-    --sea-foam: #feffff;
-    --sea-foam--opaque: #feffffcc;
-    --cloudy: #f7f9fb;
-    --sky: #8fc1e3;
-    --shallow: #5085a5;
-    --shallow--opaque: #5085a5dd;
-    --deep: #31708e;
-    --deep--opaque: #31708ecc;
+  --charcoal: #222;
+  --sea-foam: #feffff;
+  --sea-foam--opaque: #feffff99;
+  --cloudy: #f7f9fb;
+  --sky: #8fc1e3;
+  --shallow: #5085a5;
+  --shallow--opaque: #5085a5dd;
+  --deep: #31708e;
+  --deep--opaque: #31708ecc;
 
-    --text-dark: var(--charcoal);
-    --text-light: var(--sea-foam);
+  --text-dark: var(--charcoal);
+  --text-light: var(--sea-foam);
 
-    --brand-font: "Frank Ruhl Libre", serif;
-    --body-font: "PT Sans", sans-serif;
+  --brand-font: "Frank Ruhl Libre", serif;
+  --body-font: "PT Sans", sans-serif;
 }
 /* /colors */
 
 /* utils */
 .brand-text {
-    font-family: var(--brand-font);
+  font-family: var(--brand-font);
 }
 .sea-foam-theme {
-    color: var(--charcoal) !important;
-    background-color: var(--sea-foam) !important;
+  color: var(--charcoal) !important;
+  background-color: var(--sea-foam) !important;
 }
 .sea-foam-theme--transparent {
-    color: var(--charcoal) !important;
-    background-color: var(--sea-foam--opaque) !important;
+  color: var(--charcoal) !important;
+  background-color: var(--sea-foam--opaque) !important;
 }
 .cloudy-theme {
-    color: var(--charcoal) !important;
-    background-color: var(--cloudy) !important;
+  color: var(--charcoal) !important;
+  background-color: var(--cloudy) !important;
 }
 .sky-theme {
-    color: var(--charcoal) !important;
-    background-color: var(--sky) !important;
+  color: var(--charcoal) !important;
+  background-color: var(--sky) !important;
 }
 .shallow-theme {
-    color: var(--sea-foam) !important;
-    background-color: var(--shallow) !important;
+  color: var(--sea-foam) !important;
+  background-color: var(--shallow) !important;
 }
 .shallow-theme--transparent {
-    color: var(--sea-foam) !important;
-    background-color: var(--shallow--opaque) !important;
+  color: var(--sea-foam) !important;
+  background-color: var(--shallow--opaque) !important;
 }
 .deep-theme {
-    color: var(--sea-foam) !important;
-    background-color: var(--deep) !important;
+  color: var(--sea-foam) !important;
+  background-color: var(--deep) !important;
 }
 .deep-theme--transparent {
-    color: var(--sea-foam) !important;
-    background-color: var(--deep--opaque) !important;
+  color: var(--sea-foam) !important;
+  background-color: var(--deep--opaque) !important;
 }
 .charcoal-theme {
-    color: var(--sea-foam) !important;
-    background-color: var(--charcoal) !important;
+  color: var(--sea-foam) !important;
+  background-color: var(--charcoal) !important;
 }
 
 .sea-foam-theme a,
@@ -65,7 +70,7 @@
 .sea-foam-theme a:hover,
 .cloudy-theme a:hover,
 .sky-theme a:hover {
-    color: var(--charcoal) !important;
+  color: var(--charcoal) !important;
 }
 
 .deep-theme a,
@@ -74,58 +79,48 @@
 .deep-theme a:hover,
 .shallow-theme a:hover,
 .charcoal-theme a:hover {
-    color: var(--sea-foam) !important;
+  color: var(--sea-foam) !important;
 }
 /* /utils */
 
 /* base */
 .atl {
-    color: var(--text-dark);
-    font-family: var(--body-font);
+  color: var(--text-dark);
+  font-family: var(--body-font);
 }
 
 h1,
 h2 {
-    font-weight: bold;
-    font-family: var(--brand-font);
+  font-weight: bold;
+  font-family: var(--brand-font);
 }
 
 h3,
 h4,
 h5,
 h6 {
-    font-weight: bold;
-    font-family: var(--body-font);
+  font-weight: bold;
+  font-family: var(--body-font);
 }
 /* /base */
 
 /* nav */
-.atl-nav {
-}
-.atl-nav__list {
-}
-.atl-nav__item {
-}
 .atl-nav__links {
-    float: left;
+  float: left;
 }
 @media screen and (min-width: 576px) {
-    .atl-nav__links {
-        float: right;
-    }
-}
-.atl-nav__link {
-}
-.atl-nav__link:hover {
+  .atl-nav__links {
+    float: right;
+  }
 }
 .atl-nav__logo {
-    width: 32px;
+  width: 32px;
 }
 .atl-nav__brand {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-family: var(--brand-font);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: var(--brand-font);
 }
 
 /* /nav */
@@ -133,37 +128,73 @@ h6 {
 /* hero */
 
 .atl-hero {
-    background-image: url(waves.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-    position: relative;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(waves.jpg);
 }
 .atl-hero__text-wrap {
-    margin: 0 auto;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.6);
 }
 .atl-hero__title {
-    font-family: var(--brand-font);
+  font-family: var(--brand-font);
+}
+@media screen and (min-width: 1200px) {
+  .atl-hero__title {
+    font-size: 4.5rem;
+  }
 }
 /* /hero */
 
 /* services */
-.atl-services {
+.atl-service-card__icon {
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 100%;
+  background: var(--charcoal);
 }
-
+.atl-service-card__icon svg {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}
 .atl-service-card {
-    text-align: center;
+  text-align: center;
 }
 .atl-service-card__icon {
-    font-size: 4rem;
+  margin: 0 auto;
 }
-.atl-service-card__content {
+@media screen and (min-width: 768px) {
+  .atl-service-card {
+    text-align: left;
+  }
+  .atl-service-card__icon {
+    margin: 0;
+  }
 }
 /* /services */
 
-/* about */
-.atl-about {
-    background-size: cover;
-    background-position: 50% 50%;
-    background-image: url(lighthouse.jpg);
+/* endorsements */
+.atl-endorsements {
+  color: #fff;
+  background: var(--charcoal);
 }
-/* /about */
+/* /endorsements */
+
+.atl-contact__email-icon {
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 100%;
+  background: var(--charcoal);
+}
+
+.atl-contact__email-icon svg {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}
