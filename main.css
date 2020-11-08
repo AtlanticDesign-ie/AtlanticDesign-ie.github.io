@@ -102,6 +102,10 @@ h6 {
   font-weight: bold;
   font-family: var(--body-font);
 }
+
+img {
+  max-width: 100%;
+}
 /* /base */
 
 /* nav */
